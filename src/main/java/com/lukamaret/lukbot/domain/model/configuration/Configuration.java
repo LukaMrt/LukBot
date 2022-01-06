@@ -2,16 +2,16 @@ package com.lukamaret.lukbot.domain.model.configuration;
 
 public class Configuration {
 
-    private Spotifyconfiguration spotifyconfiguration;
+    private Spotifyconfiguration spotify;
 
-    private DiscordConfiguration discordConfiguration;
+    private DiscordConfiguration discord;
 
-    public Spotifyconfiguration getSpotifyconfiguration() {
-        return spotifyconfiguration;
+    public Spotifyconfiguration getSpotify() {
+        return spotify;
     }
 
-    public DiscordConfiguration getDiscordConfiguration() {
-        return discordConfiguration;
+    public DiscordConfiguration getDiscord() {
+        return discord;
     }
 
 }

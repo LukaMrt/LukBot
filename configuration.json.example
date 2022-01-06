@@ -1,0 +1,10 @@
+{
+  "spotify": {
+    "tracker": "tracker_id"
+  },
+  "discord": {
+    "token": "token",
+    "logs": "channel_id",
+    "owner": "channel_id"
+  }
+}
