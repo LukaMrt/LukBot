@@ -19,7 +19,7 @@ public class StopCommand implements Command {
     @Override
     public void execute(long authorId, long channelId, String[] args) {
         discord.disconnect();
-        LoggerFactory.getLogger(StopCommand.class).info("Spotify tracker stopped");
+        LoggerFactory.getLogger(StopCommand.class).info("LukBot stopped");
         System.exit(0);
     }
 

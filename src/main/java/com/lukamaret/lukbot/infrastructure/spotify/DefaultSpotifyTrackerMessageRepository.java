@@ -1,6 +1,7 @@
 package com.lukamaret.lukbot.infrastructure.spotify;
 
 import com.lukamaret.lukbot.domain.application.spotify.SpotifyTrackerMessageRepository;
+import org.slf4j.LoggerFactory;
 
 import java.time.LocalDateTime;
 

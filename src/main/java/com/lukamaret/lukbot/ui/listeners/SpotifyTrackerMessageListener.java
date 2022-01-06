@@ -5,6 +5,7 @@ import com.lukamaret.lukbot.domain.application.spotify.SpotifyTrackerGuardServic
 import org.javacord.api.entity.DiscordEntity;
 import org.javacord.api.event.message.MessageCreateEvent;
 import org.javacord.api.listener.message.MessageCreateListener;
+import org.slf4j.LoggerFactory;
 
 import javax.inject.Inject;
 

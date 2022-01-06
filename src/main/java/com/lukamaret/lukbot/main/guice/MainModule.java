@@ -2,6 +2,7 @@ package com.lukamaret.lukbot.main.guice;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Injector;
+import com.google.inject.Singleton;
 import com.lukamaret.lukbot.domain.application.configuration.DiscordConfiguration;
 import com.lukamaret.lukbot.domain.application.configuration.SpotifyConfiguration;
 import com.lukamaret.lukbot.domain.application.message.MessageSender;
@@ -33,7 +34,7 @@ public class MainModule extends AbstractModule {
         bind(DiscordApi.class).toInstance(discord);
         bind(SpotifyConfiguration.class).toInstance(spotifyConfiguration);
         bind(DiscordConfiguration.class).toInstance(discordConfiguration);
-        bind(SpotifyTrackerMessageRepository.class).to(DefaultSpotifyTrackerMessageRepository.class);
+        bind(SpotifyTrackerMessageRepository.class).to(DefaultSpotifyTrackerMessageRepository.class).in(Singleton.class);
         bind(MessageSender.class).to(DiscordMessageSender.class);
     }
 

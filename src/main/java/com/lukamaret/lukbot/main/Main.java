@@ -6,6 +6,7 @@ import com.lukamaret.lukbot.infrastructure.listeners.DefaultListenersRepository;
 import com.lukamaret.lukbot.infrastructure.tasks.DefaultTasksRepository;
 import com.lukamaret.lukbot.main.guice.ConfigurationModule;
 import com.lukamaret.lukbot.main.guice.MainModule;
+import org.slf4j.LoggerFactory;
 
 import java.io.File;
 
@@ -19,6 +20,8 @@ public class Main {
 
         new DefaultListenersRepository(injector).registerListeners();
         new DefaultTasksRepository(injector).registerTasks();
+
+        LoggerFactory.getLogger(Main.class).info("LukBot started");
 
     }
 
